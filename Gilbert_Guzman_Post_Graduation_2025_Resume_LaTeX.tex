@@ -1,0 +1,127 @@
+%Gilbert I. Guzman -- Resume [May 2025].
+%This is my post-graduation resume, coded in LaTeX. 
+%It contains my most up to date education, work experience, projects, and skills.
+
+%Initial setup for document & import of packages.
+\documentclass[letterpaper,11pt]{article} %Defines document as article: sets paper size to letterpaper with font size [11pt].
+\usepackage[a4paper,margin=0.5in]{geometry} %Set page size to A4 and applies 0.5 inch margin for all sides.
+\usepackage{newtxtext,newtxmath} %Load Times New Roman lookalike font for both normal text and math.
+\usepackage{textcomp} %Ensure all font shapes are available (including special text symbols).
+\usepackage{titlesec} %Allows for custom section titles (format & spacing).
+\usepackage{enumitem} %Allows for custom list environments (itemize & enumerate for format & spacing).
+\usepackage[hidelinks]{hyperref} %Allows clickable hyperlinks, hiding the colored boxes and borders around links so it looks cleaner.
+\usepackage{fancyhdr} %Allows creation of custom headers and footers for rest of document.
+\usepackage[english]{babel} %Sets document language to English. (proper hyphenation & text rules).
+\usepackage{tabularx} %Allows flexible column-width tables.
+
+%Additional Page header and footer settings.
+\linespread{0.55} %Set line spacing factor to 0.55 for more compact text.
+\setlength{\parskip}{0pt} %Set space between paragraphs to 0 points to waste less space.
+\setlength{\parsep}{0pt} %Set space between paragraphs within lists to 0 points to waste less space.
+\renewcommand{\arraystretch}{0.75} %Reduce default row height in tables by 75%.
+\titleformat{\section}{
+  \vspace{-7pt}\small\scshape %Before section title: reduce vertical space by 7pt. (Set font size to small & small caps)
+}{}{0em}{}[\titlerule\vspace{-7pt}] %After section title: add horizontal rule (\titlerule) and reduce vertical space by 7pt to reduce space.
+
+\begin{document} %Begin document body.
+\footnotesize %Sets body text to footnotesize. (Make text smaller while headers remain larger).
+
+\begin{center} %Center top content horizontally on page.
+    {\LARGE \scshape Gilbert I. Guzman} \\ \vspace{5pt} %Print my name in large size with small caps; adds 5pt vertical space below the name for spacing.
+    \small (915) 202--4744 $\|$ \href{mailto:azaze7.github@gmail.com}{\underline{azaze7.github@gmail.com}} $\|$  %Print my phone number and email address (hyperlinked), separated by double vertical bar.
+    El Paso, TX $\|$ \href{https://github.com/Azaze7}{\underline{github.com/Azaze7}} $\|$  %Print my location and GitHub URL (hyperlinked), separated by double vertical bar.
+    \href{https://www.linkedin.com/in/gilbert-guzman/}{\underline{linkedin.com/in/gilbert-guzman/}} %Print my LinkedIn URL (hyperlinked).
+\end{center} %Ends top centered content.
+
+\section{Education} %Begin "Education" section.
+\begin{itemize} %Start itemized list for education items.
+    \item \textbf{\begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}} The University of Texas at El Paso [UTEP] & \textit{Graduation: 05/2025} \end{tabular*}} %Print my School and Graduation date on one row table.
+    \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}  %Begin new table spanning the full text width.
+    Bachelor of Science in Computer Science $\|$ Concentration in Secure Cyber Systems & \textit{GPA:\@ 3.25/4.00\@} %Left side contains degree name with double vertical bar between proper degree and concentration; right side contains my final GPA (italicized).
+    \end{tabular*} %Ends the table for college. 
+    \begin{itemize}  %Begin next nested list for relevant coursework.
+    \item \textbf{Relevant Coursework}: Software Engineering Requirements I \& II [Eng. / Des. \& Imp.], Software Reverse Engineering, Software Vulnerabilities, Computer Security, Computer Networks, Wireless Networks. %List "relevant coursework" in bold label, then the courses.
+    \end{itemize} %End nested list for relevant coursework.
+\end{itemize} %End of "Education" section.
+
+\section{Honors \& Certifications} %Begin "Honors & Certifications" section.
+\begin{itemize}  %Start itemized list for "Honors" Section.
+  \item \textbf{\underline{Honors}} %Print "Honors" bolded & underlined.
+  \begin{itemize}  %Begins nested list for individual honors. 
+  \item First Place \& Most Innovative Award [2025 Borderland Glitch Game Jam], April 2025. %Print Most Recent Game Jam.
+  \item First Place [Terminator: Hackathon/Capture the Flag], November 2024. %Print Hackathon/Capture the Flag event.
+  \item Most Technical Award [2024 Borderland Glitch Game Jam], April 2024. %Print Last Years Game Jam.
+  \end{itemize} %End of nested list for honors.
+\end{itemize} %End of "Honors" section.
+
+\begin{itemize}  %Start itemized list for "Certifications" Section.
+  \item \textbf{\underline{Certifications}}   %Print "Certifications" bolded & underlined.
+  \begin{itemize}  %Begins nested list for individual certifications.
+  \item AWS Cloud Support, Summer 2024. %Print AWS certification.
+  \item Google Cybersecurity Professional, Summer 2024. %Print Google Cybersecurity Professional certification.
+  \item Google IT Support Professional, Summer 2024. %Print Google IT Support Professional certification.
+  \end{itemize} %End of nested list for certifications.
+\end{itemize} %End of "Certifications" section.
+
+\section{Work Experience} %Start "Work Experience" section.
+\begin{itemize}  %Start itemized list for "Work Experience" Section.
+    \item \textbf{\begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}} Engineering Ambassador/ACES Associate & \textit{08/2024--06/2025} \end{tabular*}} %Creates one-row table: left-side is position title & right-side shows dates (italicized).
+    \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}  %Begin new table for first employer and location.
+    The University of Texas at El Paso [UTEP] & \textit{El Paso, TX}  %Set Left side to University name & right side to location.
+    \end{tabular*} %End one row table.
+    \begin{itemize}  %Begins nested list for responsibilities of first job. [UTEP].
+        \item Educated and recruited 4,500+ students during various K-12 outreach initiatives such as the First Lego League [FLL], First Tech 
+Challenge [FTC], and traveling to in-person tabling events designed to inspire students to pursue careers in engineering. %First Bullet.
+        \item Personally composed and deployed custom scoring and leaderboard software used during the official El Paso FIRST® LEGO® League Explore Festival held at UTEP in January 2025. Granted logistical support for over 300 students in over 20+ robotics teams. %Second Bullet.
+        \item Provided tutoring services to undergraduate students who visited the ACES office in the field of Computer Science. %Third Bullet.
+    \end{itemize} %Ends nested list for first job. [UTEP].
+
+    \item \textbf{\begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}} Analytical Mentorship Program & \textit{09/2024--02/2025} \end{tabular*}} %Creates one-row table: left-side is position title & right-side shows dates (italicized).
+    \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}  %Begin new table for second employer and location.
+    The University of Texas at El Paso [UTEP] & \textit{El Paso, TX} %Set Left side to University name & right side to location.
+    \end{tabular*} %End one row table.
+    \begin{itemize}  %Begins nested list for responsibilities of second job. [Analytical Mentorship Program].
+        \item Selected for highly competitive government program, one of~10 selected, additional details only available upon request.  %First Bullet.
+        \item Received hands-on training \& collaborated with senior staff to enhance analytical capabilities through specialized modules. %Second Bullet.
+        \item Penned \& recited real-world project reports in BLUF [Bottom Line Up Front] communication style on par with work done by real 
+world intelligence analysts. %Third Bullet.
+    \end{itemize} %Ends nested list for first job. [Analytical Mentorship Program].
+\end{itemize} %End of "Work Experience" Section.
+
+\section{Technical Projects} %Start "Technical Projects" section.
+\begin{itemize}  %Start itemized list for "Technical Projects" Section.
+    \item \textbf{\begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}} MAVERICK [Personal Project/Hackathon] & \textit{Won Most Technical Award} \end{tabular*}} %Creates one-row table: left-side is project name [MAVERICK] & right-side shows key-detail (italicized).
+    \begin{itemize}  %Begins nested list for first project details. [MAVERICK].
+        \item Collaborated alongside members of the Atlas Development team to develop an indie arcade-style shooter game in under 48 hours. %First Bullet.
+        \item This game was programmed in C\# using the Unity Engine for gameplay \& Adobe Creative Suite was leveraged for art asset creation. %Second Bullet.
+        \item Created during the 2024 Borderland Glitch Game Jam, with the prompt of making a game based on a Movie/T.V. Show released during the 1980’s. [Top Gun was Chosen]. %Third Bullet.
+    \end{itemize} %Ends nested list for first project. [MARVERICK].
+        \item \textbf{\begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}} Fallen-Empire [Coursework Project] & \textit{Fulfilled Role: Team Leader} \end{tabular*}} %Creates one-row table: left-side is project name [Fallen-Empire] & right-side shows key-detail (italicized).
+    \begin{itemize} %Begins nested list for second project details. [Fallen-Empire].
+        \item Led research project discussing PowerShell-Empire, a now deprecated open-source post-exploitation agent formally listed on the 
+Microsoft Security Intelligence database as a threat due to its command-\&-control [C2] capabilities. %First Bullet.
+        \item Presented to educate a dual-listed class of 35+ students on various tools that could ``assess resilience of systems against cyber threats''. %Second Bullet.
+        \item Generated installation tutorial, video walkthrough, multiple informational PowerPoints, \& a formal class exercise that students could 
+perform using PowerShell scripts, Kali Linux, \& Windows 7 Virtual Machine to gain experience using PowerShell-Empire. %Third Bullet.
+    \end{itemize} %Ends nested list for first project. [Fallen-Empire].
+    \item \textbf{\begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}} INFILTR8 [Coursework Project] & \textit{Fulfilled Role: Team Leader} \end{tabular*}} %Creates one-row table: left-side is project name [INFILTR8] & right-side shows key-detail (italicized).
+    \begin{itemize} %Begins nested list for third project details. [INFILTR8].
+        \item  Now completed two-semester capstone project, in which students worked with DEVCOM, a civilian contractor for the Department of 
+Defense, deployed final software to customer [2 months] ahead of schedule.  %First Bullet.
+        \item Captured \& clarified details for a “Software Requirements Specification” [SRS] document for INFILTR8, a real-world application 
+with an emphasis on machine learning, completed in Fall 2024. %Second Bullet.
+        \item Due to exemplary project performance, the team was granted the privilege of exempting the final exam. %Third Bullet.
+    \end{itemize} %Ends nested list for third project. [INFILTR8].
+\end{itemize} %End of "Technical Projects" Section.
+
+\section{Skills} %Start "Skills" section.
+\begin{itemize}  %Start itemized list for "Skills" Section.
+    \item \textbf{Programming Languages}: Python, Java, C, C++, C\#, JavaScript, x86 Assembly, Ruby, Scala, React, Markdown, HTML, CSS, \& LaTeX. %List my programming languages.
+    \item \textbf{Machine Learning \& AI}: Basic ML, TensorFlow, \& Data Visualization with Matplotlib. %List my ML and data visualization skills.
+    \item \textbf{Networking \& Security}: Wireshark Analysis, TCP/IP, DNS, DDoS Analysis, Networking/Subnetting, \& Penetration Testing. %List my networking and security skills.
+    \item \textbf{Cybersecurity Tools/Reverse Engineering}: Ghidra, IDA Pro, DShell, Metasploit, \& PowerShell-Empire. %List my reverse engineering and cybersecurity tools.
+    \item \textbf{Infrastructure \& Database Management}: IT Support, Kali Linux, Windows 10/11, Ubuntu, AWS, MySQL, \& Microsoft SQL Server. %List my IT support and database management skills.
+    \item \textbf{Analytical Writing \& Presentation}: BLUF Writing Style, Microsoft Office 365, \& Adobe Creative Suite. %List my analytical writing and presentation skills.
+\end{itemize} %End of "Skills" Section.
+
+\end{document} %End of Resume.
